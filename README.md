@@ -10,7 +10,7 @@ $ brew install git-detroit
 ```
 
 # Usage
-💥 **git-detroit will only remove those prefixed with features.** 💥
+💥 **git-detroit will only remove those prefixed with** `features/` **.**💥
 
 **git-detroit** only works for projects under Git control.  
 So, first move to the directory where you want to maintain the branch.
