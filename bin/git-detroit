@@ -1,0 +1,15 @@
+#!/bin/sh
+set -e
+
+for b in $(git branch); do
+  if [[ $b =~ ^feature\/.+ ]]; then
+    read -p "do you remove ${b} ? (y/n)" YN_LOADSETTING
+
+    if [ "${YN_LOADSETTING}" != "y" ]; then
+      continue
+    else
+      eval "git branch -D ${b}"
+    fi
+  fi
+done
+
